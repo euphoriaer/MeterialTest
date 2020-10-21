@@ -4,18 +4,10 @@ using UnityEngine.UI;
 
 public class MaterialsManager : MonoBehaviour
 {
-    public Material testRed;
-    public GameObject cube;
     private Dictionary<string, Material> matDic = new Dictionary<string, Material>();
 
     [Header("材质库（管理所有材质：被替换的材质一定要在里面）")]
     public List<Material> materials;
-
-    //[Header("被替换的材质（从上面的列表里面选择名字）")]
-    //public string beReplaceNanme;//弃用，使用函数OnClickRpMat调用
-
-    //[Header("替换的材质（从上面的列表里面选择名字）")]
-    //public string replaceNanme2; //弃用，使用函数OnClickRpMat调用
 
     [Header("要替换的物体（自动检索所有物体是否带有对应材质）")]
     public List<GameObject> obj;
@@ -40,37 +32,6 @@ public class MaterialsManager : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        {
-            //测试2
-            //for (int i = 0; i < cube.GetComponent<MeshRenderer>().materials.Length; i++)
-            //{
-            //    List<Material> mGame = new List<Material>();
-            //    cube.GetComponent<MeshRenderer>().materials[i] = testRed;
-            //    cube.GetComponent<MeshRenderer>().materials[i].CopyPropertiesFromMaterial(testRed);
-            //}
-
-            //测试一
-            //cube.GetComponent<MeshRenderer>().material = testRed;
-
-            //string nameMat = "";
-            //if (obj!=null)
-            //{
-            //    foreach (var item in obj)
-            //    {
-            //        for (int i = 0; i < item.GetComponent<MeshRenderer>().materials.Length; i++)
-            //        {
-            //            nameMat = item.GetComponent<MeshRenderer>().materials[i].name;
-            //            Debug.Log("目标物体所有材质存储：" + nameMat);
-            //            destinationDic.Add(nameMat, item.GetComponent<MeshRenderer>().materials[i]);
-
-            //        }
-            //    }
-            //}
-            //else
-            //{
-            //    Debug.LogError("没有目标物体");
-            //}
-        }
         if (button != null)
         {
             button.onClick.AddListener(test1);
