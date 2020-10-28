@@ -147,8 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bc4a2706f8af242b88cd423588a78b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testRed: {fileID: 2100000, guid: a55632227277d7342aba08729ec11cf3, type: 2}
-  cube: {fileID: 86681852}
   materials:
   - {fileID: 2100000, guid: d805d830c4023774cb6259aca09f431e, type: 2}
   - {fileID: 2100000, guid: 893960384de673345a82517892b28bc7, type: 2}
@@ -725,7 +723,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u84DD\u8272\u6362\u7EA2\u8272\u6750\u8D28"
+  m_Text: "\u84DD\u8272\u6362\u8349\u5730\u6750\u8D28"
 --- !u!222 &1374612204
 CanvasRenderer:
   m_ObjectHideFlags: 0
